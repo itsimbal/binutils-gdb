@@ -1029,6 +1029,10 @@ static const arch_entry cpu_arch[] =
     CPU_WAITPKG_FLAGS, 0 },
   { STRING_COMMA_LEN (".cldemote"), PROCESSOR_UNKNOWN,
     CPU_CLDEMOTE_FLAGS, 0 },
+  { STRING_COMMA_LEN (".movdiri"), PROCESSOR_UNKNOWN,
+    CPU_MOVDIRI_FLAGS, 0 },
+  { STRING_COMMA_LEN (".movdir64b"), PROCESSOR_UNKNOWN,
+    CPU_MOVDIR64B_FLAGS, 0 },
 };
 
 static const noarch_entry cpu_noarch[] =

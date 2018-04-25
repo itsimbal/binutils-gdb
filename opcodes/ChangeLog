@@ -1,3 +1,16 @@
+2018-04-18  Igor Tsimbalist  <igor.v.tsimbalist@intel.com>
+ 
+	* i386-dis.c (enum): Add PREFIX_0F38F8.
+	(evex_table): New instructions (see prefix above).
+	* i386-gen.c (cpu_flag_init): Add CPU_MOVDIRI_FLAGS,
+	CPU_MOVDIR64B_FLAGS.
+	(cpu_flags): Likewise.
+	* i386-opc.h (enum): Likewise.
+	(i386_cpu_flags): Likewise.
+	* i386-opc.tbl: Add movidir{i,64b}.
+	* i386-init.h: Regenerate.
+	* i386-tbl.h: Likewise.
+
 2018-04-17  Igor Tsimbalist  <igor.v.tsimbalist@intel.com>
 
 	* i386-dis.c: Add REG_0F1C_MOD_0, MOD_0F1C_PREFIX_0,
